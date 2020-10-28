@@ -1,5 +1,5 @@
- #Ensimmäinen otsikko <h1> siis 
-##Väliotsikko <h2> tässä
+# Ensimmäinen otsikko 
+## Väliotsikko tässä
 
 *Italic-.harjoittelua*
 Ja vielä **Bold-harjoittelua** tähän
