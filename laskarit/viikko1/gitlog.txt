@@ -2,6 +2,8 @@ commit 1f19442b3b556f264a2d99218c7246ab2f9f55e7
 Author: marykristina4 <mary.ehrstedt@helsinki.fi>
 Date:   Wed Oct 28 12:20:11 2020 +0200
 
+Tässä pieni github-muutos testausta varten
+
     erilaisia muutoksia
 
  tiedostoja/{file1 => file22.txt}            | 0
