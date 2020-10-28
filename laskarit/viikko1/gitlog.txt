@@ -1,0 +1,114 @@
+commit 1f19442b3b556f264a2d99218c7246ab2f9f55e7
+Author: marykristina4 <mary.ehrstedt@helsinki.fi>
+Date:   Wed Oct 28 12:20:11 2020 +0200
+
+    erilaisia muutoksia
+
+ tiedostoja/{file1 => file22.txt}            | 0
+ tiedostoja/file2.txt => tiedostot/file1.txt | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 021f67e0f9a75ed92db7ba6059a20fa3451e5311
+Author: marykristina4 <mary.ehrstedt@helsinki.fi>
+Date:   Wed Oct 28 09:37:39 2020 +0200
+
+    tässä menee kolme tiedostoa
+
+ tiedostoja/file1     | 0
+ tiedostoja/file2.txt | 0
+ tiedostoja/file3.txt | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 66634c298384098a887163ff9f85815e0657a5a6
+Author: marykristina4 <mary.ehrstedt@helsinki.fi>
+Date:   Wed Oct 28 09:26:45 2020 +0200
+
+    ja taas
+
+ eka.txt    | 2 ++
+ kolmas.txt | 1 -
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+commit 13635775213853c324207f32a28518e2f9ec1f92
+Author: marykristina4 <mary.ehrstedt@helsinki.fi>
+Date:   Wed Oct 28 09:19:54 2020 +0200
+
+    nimen muutos
+
+ eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 50f09bfc78bbbd51436d833134993ac85cd186f0
+Author: marykristina4 <mary.ehrstedt@helsinki.fi>
+Date:   Wed Oct 28 09:12:56 2020 +0200
+
+    poistettu file
+
+ tiedosto.txt | 14 --------------
+ toinen.txt   |  1 -
+ 2 files changed, 15 deletions(-)
+
+commit ac9b92e2604ce875a2d3f56423b14191bc3ac77b
+Author: marykristina4 <mary.ehrstedt@helsinki.fi>
+Date:   Tue Oct 27 18:59:09 2020 +0200
+
+    poistettu ja lisätty
+
+ tiedosto.txt | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+
+commit db78837e5ced48203cd3eeb8ff90a61757d160b1
+Author: marykristina4 <mary.ehrstedt@helsinki.fi>
+Date:   Tue Oct 27 18:53:37 2020 +0200
+
+    paljon tekstiä
+
+ tiedosto.txt | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+
+commit bd90324c601ee8414dc4c6aa9f7beb4cf41b6ad1
+Author: marykristina4 <mary.ehrstedt@helsinki.fi>
+Date:   Tue Oct 27 18:42:12 2020 +0200
+
+    uusi kansio ja jokin tiedosto
+
+ stuff/jokintiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 7b4f39c73f824b2f6323870605d456093c19461b
+Author: marykristina4 <mary.ehrstedt@helsinki.fi>
+Date:   Tue Oct 27 18:40:40 2020 +0200
+
+    tokaa ja kolmasta muutettu
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 65faeb775e7f769c435810e5978d1464c1a41f53
+Author: marykristina4 <mary.ehrstedt@helsinki.fi>
+Date:   Tue Oct 27 18:39:42 2020 +0200
+
+    kolmas nyt
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 275883b327f230979e11fd803e204bd4ada80d27
+Author: marykristina4 <mary.ehrstedt@helsinki.fi>
+Date:   Tue Oct 27 18:37:56 2020 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 83bad1f0874a71036fd85711d77b16a664393dea
+Author: marykristina4 <mary.ehrstedt@helsinki.fi>
+Date:   Tue Oct 27 18:35:38 2020 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
