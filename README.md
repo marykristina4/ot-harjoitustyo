@@ -11,3 +11,7 @@
 [komentorivi.txt](https://github.com/marykristina4/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
 tässä paikallinen muutos
+
+### Viikko2
+
+[Testikattavuusraportti](https://github.com/marykristina4/ot-harjoitustyo/blob/master/laskarit/viikko2/screenshot_testikattavuus.JPG)
