@@ -1,7 +1,7 @@
 # Ohjelmistotekniikka, harjoitustyö
 
 ## Documentaatio
-[gitlog.txt](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+[Dokumentaatio](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
 ## Tehtävät
 ### Viikko1
