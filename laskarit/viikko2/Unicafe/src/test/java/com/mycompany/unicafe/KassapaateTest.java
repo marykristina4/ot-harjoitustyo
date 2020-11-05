@@ -198,6 +198,11 @@ public class KassapaateTest {
     @Test
     public void rahanLatausKassaSaldoVahenee(){
         kassa.lataaRahaaKortille(kortti, 100);
-        assertEquals("99900",Integer.toString(kassa.kassassaRahaa()));
+        assertEquals("100100",Integer.toString(kassa.kassassaRahaa()));
+    }
+    @Test
+    public void rahanLatausKassaSaldoSamaJosNegLataus(){
+        kassa.lataaRahaaKortille(kortti, -100);
+        assertEquals("100000",Integer.toString(kassa.kassassaRahaa()));
     }
 }
