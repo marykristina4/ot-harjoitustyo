@@ -21,3 +21,5 @@ tässä paikallinen muutos
 ### Viikko3
 
 [Monopoli-luokkakaavio](https://github.com/marykristina4/ot-harjoitustyo/blob/master/laskarit/viikko3/2_monopoli.jpg)
+
+[Sekvenssikaavio](https://github.com/marykristina4/ot-harjoitustyo/blob/master/laskarit/viikko3/3_sekvenssikaavio.jpg)
