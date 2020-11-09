@@ -23,3 +23,5 @@ tässä paikallinen muutos
 [Monopoli-luokkakaavio](https://github.com/marykristina4/ot-harjoitustyo/blob/master/laskarit/viikko3/2_monopoli.jpg)
 
 [Sekvenssikaavio](https://github.com/marykristina4/ot-harjoitustyo/blob/master/laskarit/viikko3/3_sekvenssikaavio.jpg)
+
+[HSL-kaavio](https://github.com/marykristina4/ot-harjoitustyo/blob/master/laskarit/viikko3/4_HSL_kaavio.jpg)
