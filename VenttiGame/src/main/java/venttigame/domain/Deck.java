@@ -14,7 +14,7 @@ import java.util.Random;
  * @author marye
  */
 public class Deck {
-    public ArrayList <Card> cardDeck = new ArrayList<>();
+    public ArrayList<Card> cardDeck = new ArrayList<>();
     
     //let's create cards so that there is 1 card per value 1-13 and suit 1-4
     public Deck(){
@@ -23,12 +23,13 @@ public class Deck {
                 cardDeck.add(new Card(i,j));
                 
             }
+        }
            for(int k = 0; k < cardDeck.size(); k++) {   
-        System.out.print(cardDeck.get(i));
-} 
+            System.out.print(cardDeck.get(k));
+           }
         }
     
-}
+
      public void shuffle() {
          //shuffling cards
     Collections.shuffle(cardDeck);
@@ -41,6 +42,15 @@ public class Deck {
          //I need to consider later which one is better
          Card drawnCard = cardDeck.get(randCard.nextInt(cardDeck.size()));
          return drawnCard;
+     }
+     public Card RemoveFromDeck(int a){
+         //take the card away from deck from certain index
+         Card taken = cardDeck.get(a);
+         cardDeck.remove(taken);
+         return taken;
+     }
+     public int deckSize(){
+         return cardDeck.size();
      }
     
 }
