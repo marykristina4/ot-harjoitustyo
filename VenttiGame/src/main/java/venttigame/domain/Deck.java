@@ -14,18 +14,19 @@ import java.util.Random;
  * @author marye
  */
 public class Deck {
-    public ArrayList<Card> cardDeck = new ArrayList<>();
+    public ArrayList<Card> cardDeck; 
     
     //let's create cards so that there is 1 card per value 1-13 and suit 1-4
     public Deck(){
+        this.cardDeck= new ArrayList<>();
+        System.out.println("testi");
         for (int i=1; i<=13; i++){
-            for (int j=1; j<=4; i++){
-                cardDeck.add(new Card(i,j));
-                
+            for (int j=1; j<=4; j++){
+                this.cardDeck.add(new Card(i,j));    
             }
         }
-           for(int k = 0; k < cardDeck.size(); k++) {   
-            System.out.print(cardDeck.get(k));
+           for(int k = 0; k < this.cardDeck.size(); k++) {   
+            System.out.println(this.cardDeck.get(k).tostring());
            }
         }
     
