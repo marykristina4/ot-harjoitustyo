@@ -7,3 +7,5 @@
 |4.11|2|aineiston tutkimista|
 |8.11|1|kurssimateriaalin lukemista|
 |10.11|4|harjoittelutyön aloitus, maven-virheen selvittely-yritykset|
+|10.11|2|virheen selvitystä ja korjaus|
+|11.11|2|etätyöpöydän asennus, repositorion kloonaus, testaus|
