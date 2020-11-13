@@ -7,6 +7,7 @@ package venttigame;
 
 import java.util.Scanner;
 import venttigame.domain.Deck;
+import venttigame.domain.Hand;
 
 /**
  *
@@ -19,6 +20,14 @@ public class MainGame {
         //Numerotiedustelu numerotiedustelu = new Numerotiedustelu(lukija);
         //numerotiedustelu.kaynnista();
         
-        Deck testDeck = new Deck();
+        //initialize new game
+        Deck gameDeck = new Deck();
+        gameDeck.shuffle();
+        
+        Hand playerHand = new Hand();
+        Hand computerHand = new Hand();
+        
+        //game starts: deal two cards to both hands
+        
     }
 }
