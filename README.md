@@ -18,7 +18,7 @@ ajettua)
 
 [Vaatimusmäärittely](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
-[Testikattavuusraportti](https://github.com/marykristina4/ot-harjoitustyo/blob/master/laskarit/viikko2/screenshot_testikattavuus.JPG)
+[Testikattavuusraportti](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/testikattavuus_17112020.JPG)
 
 
 
