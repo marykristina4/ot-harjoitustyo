@@ -5,6 +5,7 @@ julkaistaan tässä dokumentissa. Suunniteltu aikataulu sovelluksen valmistumise
 vuonna 2020. Tämän suunnitelman mukaan sovellus on siis pelattavissa joulukuun puolivälissä 2020.
 
 Tämän hetkisen version voi ajaa komennolla: mvn compile exec:java -Dexec.mainClass=venttigame.MainGame
+
 Testauksen voi suorittaa komennolla: mvn test
 
 Testausraportin voi ajaa komennolla: mvn test jacoco:report
