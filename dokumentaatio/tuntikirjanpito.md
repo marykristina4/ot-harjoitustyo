@@ -11,3 +11,4 @@
 |11.11|2|etätyöpöydän asennus, repositorion kloonaus, testaus|
 |11.11|2|luokkien suunnittelu, dao:jen tutkinta|
 |13.11|1|lisää luokkia ja käyttöliittymän aloitus|
+|17.11|2|tarkistus, että vk3 vaatimukset täyttyy, testaus|

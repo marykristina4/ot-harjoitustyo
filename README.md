@@ -1,27 +1,22 @@
-# Ohjelmistotekniikka, harjoitustyö
+# Ohjelmistotekniikka, harjoitustyö: VenttiGame
+
+Sovelluksella voi pelata tietokonetta vastaan Venttiä. Sovellus on vielä kehityksen alla. Päivitykset kehitystyössä 
+julkaistaan tässä dokumentissa. Suunniteltu aikataulu sovelluksen valmistumiselle on Helsingin yliopiston periodi 2
+vuonna 2020. Tämän suunnitelman mukaan sovellus on siis pelattavissa joulukuun puolivälissä 2020.
+
+Tämän hetkisen version voi ajaa komennolla: mvn compile exec:java -Dexec.mainClass=venttigame.MainGame
+Testauksen voi suorittaa komennolla: mvn test
+Testausraportin voi ajaa komennolla: mvn test jacoco:report
+
+Testausraporttia voi tarkastella osoitteesta:  target/site/jacoco/index.html tai alla olevasta linkistä (valmiiksi
+ajettua)
 
 ## Dokumentaatio
 [Tuntikirjanpito](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
 [Vaatimusmäärittely](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
-## Tehtävät
-### Viikko1
-
-[gitlog.txt](https://github.com/marykristina4/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
-
-[komentorivi.txt](https://github.com/marykristina4/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
-
-tässä paikallinen muutos
-
-### Viikko2
-
 [Testikattavuusraportti](https://github.com/marykristina4/ot-harjoitustyo/blob/master/laskarit/viikko2/screenshot_testikattavuus.JPG)
 
-### Viikko3
 
-[Monopoli-luokkakaavio](https://github.com/marykristina4/ot-harjoitustyo/blob/master/laskarit/viikko3/2_monopoli.jpg)
 
-[Sekvenssikaavio](https://github.com/marykristina4/ot-harjoitustyo/blob/master/laskarit/viikko3/3_sekvenssikaavio.jpg)
-
-[HSL-kaavio](https://github.com/marykristina4/ot-harjoitustyo/blob/master/laskarit/viikko3/4_HSL_kaavio.jpg)
