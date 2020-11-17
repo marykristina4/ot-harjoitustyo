@@ -6,9 +6,10 @@ vuonna 2020. Tämän suunnitelman mukaan sovellus on siis pelattavissa joulukuun
 
 Tämän hetkisen version voi ajaa komennolla: mvn compile exec:java -Dexec.mainClass=venttigame.MainGame
 Testauksen voi suorittaa komennolla: mvn test
+
 Testausraportin voi ajaa komennolla: mvn test jacoco:report
 
-Testausraporttia voi tarkastella osoitteesta:  target/site/jacoco/index.html tai alla olevasta linkistä (valmiiksi
+Testausraporttia voi tarkastella osoitteesta: target/site/jacoco/index.html tai alla olevasta linkistä (valmiiksi
 ajettua)
 
 ## Dokumentaatio
