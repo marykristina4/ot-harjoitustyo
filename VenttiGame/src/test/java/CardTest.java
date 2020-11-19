@@ -10,17 +10,19 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import venttigame.domain.Deck;
+import venttigame.domain.Card;
 
 /**
  *
  * @author marye
  */
-public class DeckTest {
+public class CardTest {
 
-    Deck testDeck;
+    Card testCard;
+    Card smallTestCard;
 
-    public DeckTest() {
+    public CardTest() {
+
     }
 
     @BeforeClass
@@ -33,7 +35,9 @@ public class DeckTest {
 
     @Before
     public void setUp() {
-        testDeck = new Deck();
+        testCard = new Card(13, 1);
+        System.out.println(testCard.tostring());
+        smallTestCard = new Card(4, 2);
     }
 
     @After
@@ -46,13 +50,14 @@ public class DeckTest {
     // @Test
     // public void hello() {}
     @Test
-    public void deckSizeIsCorrectAfterCreation() {
-        assertEquals("52", Integer.toString(testDeck.deckSize()));
+    public void cardNumberTenOrBelow() {
+        testCard.modifyValues();
+        assertEquals("10", Integer.toString(testCard.getNumber()));
     }
 
     @Test
-    public void deckSizeIsCorrectAfterCardDraw() {
-        testDeck.cardDraw();
-        assertEquals("51", Integer.toString(testDeck.deckSize()));
+    public void cardNumberStaysIfBelowTen() {
+        testCard.modifyValues();
+        assertEquals("4", Integer.toString(smallTestCard.getNumber()));
     }
 }

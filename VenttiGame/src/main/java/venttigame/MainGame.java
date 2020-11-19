@@ -8,26 +8,26 @@ package venttigame;
 import java.util.Scanner;
 import venttigame.domain.Deck;
 import venttigame.domain.Hand;
+import venttigame.ui.PlayerCommunication;
 
 /**
  *
  * @author marye
  */
 public class MainGame {
-    public static void main(String[] args) {
-        Scanner lukija = new Scanner(System.in);
 
-        //Numerotiedustelu numerotiedustelu = new Numerotiedustelu(lukija);
-        //numerotiedustelu.kaynnista();
-        
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+
         //initialize new game
         Deck gameDeck = new Deck();
         gameDeck.shuffle();
-        
+
         Hand playerHand = new Hand();
         Hand computerHand = new Hand();
-        
-        //game starts: deal two cards to both hands
-        
+
+        PlayerCommunication playComm = new PlayerCommunication(reader, gameDeck, playerHand, computerHand);
+        playComm.start();
+
     }
 }

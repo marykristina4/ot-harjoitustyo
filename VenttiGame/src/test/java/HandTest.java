@@ -10,17 +10,18 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import venttigame.domain.Deck;
+import venttigame.domain.Card;
+import venttigame.domain.Hand;
 
 /**
  *
  * @author marye
  */
-public class DeckTest {
+public class HandTest {
 
-    Deck testDeck;
+    Hand testHand;
 
-    public DeckTest() {
+    public HandTest() {
     }
 
     @BeforeClass
@@ -33,7 +34,7 @@ public class DeckTest {
 
     @Before
     public void setUp() {
-        testDeck = new Deck();
+        testHand = new Hand();
     }
 
     @After
@@ -46,13 +47,25 @@ public class DeckTest {
     // @Test
     // public void hello() {}
     @Test
-    public void deckSizeIsCorrectAfterCreation() {
-        assertEquals("52", Integer.toString(testDeck.deckSize()));
+    public void createdHandExists() {
+        assertTrue(testHand != null);
     }
 
     @Test
-    public void deckSizeIsCorrectAfterCardDraw() {
-        testDeck.cardDraw();
-        assertEquals("51", Integer.toString(testDeck.deckSize()));
+    public void handIsEmptyWhenCreated() {
+        assertEquals("0", Integer.toString(testHand.handSize()));
+    }
+
+    @Test
+    public void addCardIncreasesSize() {
+        testHand.addCard(new Card(1, 1));
+        assertEquals("1", Integer.toString(testHand.handSize()));
+    }
+
+    @Test
+    public void handSumCorrect() {
+        testHand.addCard(new Card(1, 1));
+        testHand.addCard(new Card(2, 2));
+        assertEquals("3", Integer.toString(testHand.handSum()));
     }
 }

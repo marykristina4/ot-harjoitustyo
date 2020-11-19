@@ -12,3 +12,6 @@
 |11.11|2|luokkien suunnittelu, dao:jen tutkinta|
 |13.11|1|lisää luokkia ja käyttöliittymän aloitus|
 |17.11|2|tarkistus, että vk3 vaatimukset täyttyy, testaus|
+|17.11|1|tekstikäyttöliittymä ja luokkien metodit|
+|17.11|1|arkkitehtuuridokumentti, tutustuminen vk4 vaatimuksiin|
+|18.11|3|määrittelydokkarin päivitys, yksikkötestit, checkstyles|
