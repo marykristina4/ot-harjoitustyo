@@ -5,7 +5,7 @@
 Ohjelman rakenne noudattaa kerrosarkkitehtuuria, jossa päällimmäisenä käyttöliittymä venttigame.ui, joka on
 toistaiseksi tekstikäyttöliittymä ja alempana sovelluslogiikkaa käsittelevä pakkaus venttigame.domain.
 
-<img src="https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/venttigame_pakkauskaavio.png" width="160">
+<img src="https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/venttigame_pakkauskaavio.png" width="260">
 Kuva arkkitehtuurista
 
 ## Käyttöliittymä
