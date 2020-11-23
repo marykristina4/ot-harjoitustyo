@@ -15,3 +15,7 @@
 |17.11|1|tekstikäyttöliittymä ja luokkien metodit|
 |17.11|1|arkkitehtuuridokumentti, tutustuminen vk4 vaatimuksiin|
 |18.11|3|määrittelydokkarin päivitys, yksikkötestit, checkstyles|
+|19.11|3|testausta, referenssisovellukseen tutustumista|
+|23.11|3|vk4 palautuksen testaus, checkstyles-virheiden korjaus|
+
+summa: 30h (23.11. mennessä)

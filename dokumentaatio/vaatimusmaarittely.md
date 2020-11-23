@@ -17,6 +17,8 @@ Kun sovellus käynnistyy tulee esiin rekisteröitymis/kirjautumisruutu. Kun pela
 oma käyttäjätunnus. Kun rekisteröityminen on tehty palataan kirjautumisruutuun. Salasanaa ei tarvitse. Kun pelaaja
 kirjautuu aukeaa hänelle pelinäkymä. Pelinäkymän suunnittelu on vielä kesken, mutta siinä pelaaja pystyy pelaamaan
 venttiä ja hän voi tallentaa pelituloksensa. Halutessaan pelaaja voi ajaa raportin, josta näkee aiempia pelituloksia. 
+(Teksikäyttöliittymä tehty 23.11.2020. Pelin pelaaminen toimii suunnitellusti, käyttäjiä ei voi vielä tallentaa
+eikä pelituloksia.)
 
 ## Perusversion tarjoama toiminnallisuus
 
@@ -34,7 +36,8 @@ häviää jos sen korttien summa on yli 21 (Tämä toteutettu 20.11.2020, lisäk
 
 ### Kirjautumisen jälkeen
 
-- Pelaaja voi käynnistää uuden pelin tai tarkkailla aiempia tilastojaan.
+- Pelaaja voi käynnistää uuden pelin tai tarkkailla aiempia tilastojaan. (Uusi peli käynnistyy ajamalla komento
+ mvn compile exec:java -Dexec.mainClass=venttigame.MainGame, tehty 20.11.2020 ja testattu 23.11.2020)
 - Pelaaja voi kirjautua ulos järjestelmästä.
 
 ## Jatkokehitysideoita	

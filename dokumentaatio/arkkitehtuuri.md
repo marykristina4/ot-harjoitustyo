@@ -5,8 +5,8 @@
 Ohjelman rakenne noudattaa kerrosarkkitehtuuria, jossa päällimmäisenä käyttöliittymä venttigame.ui, joka on
 toistaiseksi tekstikäyttöliittymä ja alempana sovelluslogiikkaa käsittelevä pakkaus venttigame.domain.
 
---tähän kuva arkkitehtuurista
 <img src="https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/venttigame_pakkauskaavio.png" width="160">
+Kuva arkkitehtuurista
 
 ## Käyttöliittymä
 
@@ -38,12 +38,12 @@ Luokassa Hand on seuraavat toiminnallisuudet:
 - käden sisällön katsominen showHand()
 - kädessä olevien korttien numeroarvojen laskeminen yhteen handSum()
 
---tähän luokka/pakkauskaavio
 <img src="https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/venttigame_luokkakaavio.png" width="400">
+Kuva luokka/pakkauskaaviosta
 
 ### Sovelluksen päätoiminnallisuudet
 
---tähän sekvenssikaavio
+--tähän sekvenssikaavio myöhemmin
 
 ## Tietojen pysyväistallennus
 
@@ -57,3 +57,5 @@ tunnus;Käyttäjän nimi
 eli ensin käyttäjätunnus ja puolipisteellä erotettuna käyttäjän nimi. 
 
 ## Huomioita ohjelmasta / kehitysehdotuksia / heikkouksia
+
+Päivitetään myöhemmin

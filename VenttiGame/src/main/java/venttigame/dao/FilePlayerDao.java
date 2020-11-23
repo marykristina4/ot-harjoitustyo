@@ -17,7 +17,8 @@ import venttigame.domain.Player;
  * @author marye
  */
 public class FilePlayerDao implements PlayerDao {
-        private List<Player> users;
+
+    private List<Player> users;
     private String file;
 
     public FilePlayerDao(String file) throws Exception {
@@ -34,36 +35,35 @@ public class FilePlayerDao implements PlayerDao {
             FileWriter writer = new FileWriter(new File(file));
             writer.close();
         }
-        
+
     }
-    
-    private void save() throws Exception{
+
+    private void save() throws Exception {
         try (FileWriter writer = new FileWriter(new File(file))) {
             for (Player user : users) {
                 writer.write(user.getUsername() + ";" + user.getName() + "\n");
             }
-        } 
+        }
     }
-    
+
     @Override
     public List<Player> getAll() {
         return users;
     }
-    
+
     @Override
     public Player findByUsername(String username) {
         return users.stream()
-            .filter(u->u.getUsername()
-            .equals(username))
-            .findFirst()
-            .orElse(null);
+                .filter(u -> u.getUsername()
+                .equals(username))
+                .findFirst()
+                .orElse(null);
     }
-    
+
     @Override
     public Player create(Player user) throws Exception {
         users.add(user);
         save();
         return user;
-    }    
+    }
 }
-
