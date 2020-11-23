@@ -10,15 +10,18 @@ Testauksen voi suorittaa komennolla: mvn test
 
 Testausraportin voi ajaa komennolla: mvn test jacoco:report
 
-Testausraporttia voi tarkastella osoitteesta: target/site/jacoco/index.html tai alla olevasta linkistä (valmiiksi
-ajettua)
+Testausraporttia voi tarkastella osoitteesta: target/site/jacoco/index.html
+
+Checkstyles-raportin voi ajaa komennolla: mvn jxr:jxr checkstyle:checkstyle
+
+Checkstyles-raporttia voi tarkastella osoitteesta: target/site/checkstyle.html
 
 ## Dokumentaatio
 [Tuntikirjanpito](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
 [Vaatimusmäärittely](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
-[Testikattavuusraportti](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/testikattavuus_17112020.JPG)
+[Arkkitehtuurikuvaus](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
 
 
