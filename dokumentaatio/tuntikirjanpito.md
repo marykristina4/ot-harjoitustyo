@@ -17,5 +17,10 @@
 |18.11|3|määrittelydokkarin päivitys, yksikkötestit, checkstyles|
 |19.11|3|testausta, referenssisovellukseen tutustumista|
 |23.11|3|vk4 palautuksen testaus, checkstyles-virheiden korjaus|
+|24.11|4|graafinen käyttöliittymä|
+|24.11|2|virheiden selvitys|
+|24.11|2|seuraavien vaiheiden selvitys: tiedon tallennus|
+|25.11|2|vk5 vaatimukset, ohjelman muokkaus|
+|25.11|1|sekvenssikaavio|
 
-summa: 30h (23.11. mennessä)
+summa: 40h (25.11. mennessä)

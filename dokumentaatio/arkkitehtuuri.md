@@ -3,17 +3,17 @@
 ## Rakenne
 
 Ohjelman rakenne noudattaa kerrosarkkitehtuuria, jossa päällimmäisenä käyttöliittymä venttigame.ui, joka on
-toistaiseksi tekstikäyttöliittymä ja alempana sovelluslogiikkaa käsittelevä pakkaus venttigame.domain.
+graafinen käyttöliittymä ja alempana sovelluslogiikkaa käsittelevä pakkaus venttigame.domain.
 
 <img src="https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/venttigame_pakkauskaavio.png" width="260">
 Kuva arkkitehtuurista
 
 ## Käyttöliittymä
 
-Käyttöliittymä on toistaiseksi tekstikäyttöliittymä, jolla voi ohjeiden mukaan pelata venttiä. Oletetaan, että
+Käyttöliittymä on graafinen käyttöliittymä, jolla voi ohjeiden mukaan pelata venttiä. Oletetaan, että
 pelaaja tuntee säännöt.
 
-Käyttöliittymä on pakkauksessa venttigame.ui ja käyttöliittymän logiikka on luokassa PlayerCommunication.java.
+Käyttöliittymä on pakkauksessa venttigame.ui ja käyttöliittymän logiikka on luokassa VenttiUi.java.
 Käyttöliittymä on eriytetty sovelluslogiikasta, ja käyttöliittymästä kutsutaan sovellusluokkaa toteuttavia olioita
 ja niiden metodeja.
 
@@ -43,10 +43,20 @@ Kuva luokka/pakkauskaaviosta
 
 ### Sovelluksen päätoiminnallisuudet
 
+Käyttöliittymä VenttiUi.java toimii rajapintana käyttäjän suuntaan. Tarvittavat oliot luodaan init() -vaiheessa.
+Pelin komentojen mukaan toiminnallisuudet on toteutettu, ja VenttiUi:sta kutsutaan luokkien Deck, Hand ja Card
+-olioiden metodeja napin painallusten mukaan. Käytössä on siis reagoiva tapahtumankäsittelijä. Ajetun metodin
+tulokset (pelaajan saama kortti, korttien summa) palautetaan käyttöliittymään pelaajan näkyviin.
+
 --tähän sekvenssikaavio myöhemmin
+
+Pääasiallinen rajapinta käyttäjälle on siis VenttiUi, mutta halutessaan katsoa pelin sääntöjä, käyttäjä pääsee nappia
+painamalla siirtymään toiseen näkymään jossa on pelin säännöt. Sieltä pääsee takaisin pelinäkymään jälleen napin
+painalluksella.
 
 ## Tietojen pysyväistallennus
 
+Alkuperäinen suunnitelma:
 Käyttäjätiedot tallennetaan tiedostoon. Tässä hyödynnetään dao-mallia (tämä toiminnallisuus työn alla).
 Sovelluksen juureen sijoitettu konfiguraatiotiedosto config.properties määrittelee tiedostojen nimet.
 
@@ -54,8 +64,14 @@ Sovellus tallettaa käyttäjät seuraavassa formaatissa
 
 tunnus;Käyttäjän nimi
 
-eli ensin käyttäjätunnus ja puolipisteellä erotettuna käyttäjän nimi. 
-
+eli ensin käyttäjätunnus ja puolipisteellä erotettuna käyttäjän nimi.
+ 
+Päivitys 25.11:
+Harkinnassa on myös, jos ainoa tarve on pelitulosten tallentaminen, tarviiko käyttäjätietoja sellaisenaan tallentaa,
+vai riittäisikö se, että käyttöliittymässä kysyy pelaajan nimen jos pelaaja haluaa tallentaa tuloksen. Ei kuitenkaan
+alunperinkään ollut tarvetta että kaikki pelitulokset olisi pakko tallentaa. Tällöin näkymästä VenttiUi voisi olla 
+tapahtumankäsittelijä, joka käsittelee tallennuksen pelaajan näin halutessa.
+ 
 ## Huomioita ohjelmasta / kehitysehdotuksia / heikkouksia
 
 Päivitetään myöhemmin

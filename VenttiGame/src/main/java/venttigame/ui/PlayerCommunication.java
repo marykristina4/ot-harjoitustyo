@@ -70,9 +70,9 @@ public class PlayerCommunication {
     public void printInstructions() {
         System.out.println("Komennot alla:");
         System.out.println("1: Aloita peli - pelaajalle ja tietokoneelle jaetaan 2 korttia");
-        System.out.println("2: Pelaajalle lisäkortti - Jos summa yli 21, pelaaja häviää. Jos alle,"
-                + "vielä  mukana pelissä ja edelleen pelaajan vuoro ja voi päättää ottaako uuden kortin");
-        System.out.println("3: Tietokoneelle kortti - Jos summa yli 21, pelaaja voittaa. Jos summa"
+        System.out.println("2: Pelaajalle lisäkortti - Jos summa yli 21, pelaaja häviää. Jos alle, "
+                + "vielä mukana pelissä ja edelleen pelaajan vuoro ja voi päättää ottaako uuden kortin");
+        System.out.println("3: Tietokoneelle lisäkortti - Jos summa yli 21, pelaaja voittaa. Jos summa"
                 + "vähemmän kun pelaajalla, tietokoneelle uusi kortti valitsemalla uudelleen 3. Jos summa"
                 + " tasan 21, tietokone voittaa. Jos summa sama kun pelaajalla, tasapeli");
         System.out.println("4: katso aiempia tuloksia (ei vielä käytössä");
@@ -115,7 +115,7 @@ public class PlayerCommunication {
         System.out.println("Pelaajan kortti: " + toPlayer.tostring());
         playerHand.addCard(toPlayer);
         System.out.println("Pelaajalle nyt kortit: ");
-        playerHand.showHand();
+        //playerHand.showHand();
         System.out.println("");
         System.out.println("Korttien summa: " + playerHand.handSum());
         try {
@@ -138,7 +138,7 @@ public class PlayerCommunication {
         System.out.println("Tietokoneen kortti: " + toComputer.tostring());
         computerHand.addCard(toComputer);
         System.out.println("Tietokoneella nyt kortit: ");
-        computerHand.showHand();
+        //computerHand.showHand();
         System.out.println("");
         System.out.println("Korttien summa: " + computerHand.handSum());
         try {

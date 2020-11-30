@@ -23,11 +23,6 @@ public class Hand {
         this.cardHand.add(card);
     }
 
-    public void showHand() {
-        for (int i = 0; i < this.cardHand.size(); i++) {
-            System.out.println(this.cardHand.get(i).tostring());
-        }
-    }
 
     public int handSum() {
         int sum = 0;

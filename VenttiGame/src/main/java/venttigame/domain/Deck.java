@@ -26,15 +26,15 @@ public class Deck {
                 this.cardDeck.add(new Card(i, j));
             }
         }
-        for (int k = 0; k < this.cardDeck.size(); k++) {
-            System.out.println(this.cardDeck.get(k).tostring());
-        }
+        //for (int k = 0; k < this.cardDeck.size(); k++) {
+        //    System.out.println(this.cardDeck.get(k).tostring());
+        //}
         for (int k = 0; k < this.cardDeck.size(); k++) {
             this.cardDeck.get(k).modifyValues();
         }
-        for (int k = 0; k < this.cardDeck.size(); k++) {
-            System.out.println(this.cardDeck.get(k).tostring());
-        }
+        //for (int k = 0; k < this.cardDeck.size(); k++) {
+        //    System.out.println(this.cardDeck.get(k).tostring());
+        //}
     }
 
     public void shuffle() {
