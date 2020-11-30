@@ -53,7 +53,7 @@ painamalla siirtymään toiseen näkymään jossa on pelin säännöt. Sieltä p
 painalluksella.
 
 <img src="https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/venttigame_sekvenssikaavio.png" width="560">
-kuva sekvenssikaaviosta
+Kuva sekvenssikaaviosta
 
 ## Tietojen pysyväistallennus
 
