@@ -48,7 +48,8 @@ Pelin komentojen mukaan toiminnallisuudet on toteutettu, ja VenttiUi:sta kutsuta
 -olioiden metodeja napin painallusten mukaan. Käytössä on siis reagoiva tapahtumankäsittelijä. Ajetun metodin
 tulokset (pelaajan saama kortti, korttien summa) palautetaan käyttöliittymään pelaajan näkyviin.
 
---tähän sekvenssikaavio myöhemmin
+<img src="https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/venttigame_sekvenssikaavio.png" width="400">
+kuva sekvenssikaaviosta
 
 Pääasiallinen rajapinta käyttäjälle on siis VenttiUi, mutta halutessaan katsoa pelin sääntöjä, käyttäjä pääsee nappia
 painamalla siirtymään toiseen näkymään jossa on pelin säännöt. Sieltä pääsee takaisin pelinäkymään jälleen napin
