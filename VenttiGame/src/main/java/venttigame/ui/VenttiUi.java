@@ -51,12 +51,16 @@ public class VenttiUi extends Application {
         BorderPane setUp = new BorderPane();
         Label text = new Label("Peliohjeet");
         Button instructions = new Button("Paina tästä nähdäksesi ohjeet");
+        instructions.setStyle("-fx-background-color: #df99d8; ");
         Label emptyText = new Label("");
         Button gameStart = new Button("Jaa aloituskortit");
+        gameStart.setStyle("-fx-border-color: #010b0d; ");
+        gameStart.setStyle("-fx-background-color: #69c4d2; ");
         Label gameStatus = new Label("Jaa aloituskortit aloittaaksesi pelin");
         Button testButton = new Button("testaus");
 
         Button playerButton = new Button("Pelaajalle kortti");
+        playerButton.setStyle("-fx-border-color: #e5a35f; ");
         Label playerStart = new Label("Pelaajan aloituskortit");
         Label playerStartCards = new Label();
         playerStartCards.setTextFill(Color.web("#0068a3"));
@@ -68,15 +72,16 @@ public class VenttiUi extends Application {
         Label playerNewCard = new Label();
         playerNewCard.setTextFill(Color.web("#00a32d"));
 
-        Button compButton = new Button("Tietokoneelle kortti");
-        Label compStart = new Label("Tietokoneen aloituskortit");
+        Button compButton = new Button("Vastustajalle kortti");
+        compButton.setStyle("-fx-border-color: #e5a35f; ");
+        Label compStart = new Label("Vastustajan aloituskortit");
         Label compStartCards = new Label();
         compStartCards.setTextFill(Color.web("#a30076"));
         compStartCards.setWrapText(true);
-        Label compTextSum = new Label("Tietokoneen korttien summa");
+        Label compTextSum = new Label("Vastustajan korttien summa");
         Label compSum = new Label();
         compSum.setTextFill(Color.web("#a30076"));
-        Label compCard = new Label("Tietokoneen uusi kortti");
+        Label compCard = new Label("Vastustajan uusi kortti");
         Label compNewCard = new Label();
         compNewCard.setTextFill(Color.web("#a30025"));
 
@@ -119,16 +124,23 @@ public class VenttiUi extends Application {
                 gameStatus.setText("Voitto pelaajalle!");
                 gameStatus.setFont(Font.font("Cambria", 32));
                 gameResult = "Voitto";
+                playerButton.setDisable(true);
+                compButton.setDisable(true);
+                gameStart.setDisable(true);
             } else if (playerHand.handSum() >= 21) {
                 gameStatus.setTextFill(Color.web("#fe2e2e"));
                 gameStatus.setText("Game Over!");
                 gameStatus.setFont(Font.font("Cambria", 32));
                 gameStatus.setRotate(305);
                 gameResult = "Häviö";
+                playerButton.setDisable(true);
+                compButton.setDisable(true);
+                gameStart.setDisable(true);
             }
 
         });
         compButton.setOnAction((event) -> {
+            playerButton.setDisable(true);
             gameDeck.shuffle();
             Card toComp = gameDeck.cardDraw();
             compNewCard.setText(toComp.tostring());
@@ -141,22 +153,34 @@ public class VenttiUi extends Application {
                 gameStatus.setFont(Font.font("Cambria", 32));
                 gameStatus.setRotate(305);
                 gameResult = "Häviö";
+                playerButton.setDisable(true);
+                compButton.setDisable(true);
+                gameStart.setDisable(true);
             } else if (computerHand.handSum() >= 21) {
                 gameStatus.setTextFill(Color.web("#52af52"));
                 gameStatus.setText("Voitto pelaajalle!");
                 gameStatus.setFont(Font.font("Cambria", 32));
                 gameResult = "Voitto";
+                playerButton.setDisable(true);
+                compButton.setDisable(true);
+                gameStart.setDisable(true);
             } else if (computerHand.handSum() > playerHand.handSum()) {
                 gameStatus.setTextFill(Color.web("#fe2e2e"));
                 gameStatus.setText("Game Over!");
                 gameStatus.setFont(Font.font("Cambria", 32));
                 gameStatus.setRotate(305);
                 gameResult = "Häviö";
+                playerButton.setDisable(true);
+                compButton.setDisable(true);
+                gameStart.setDisable(true);
             } else if (computerHand.handSum() == playerHand.handSum()) {
                 gameStatus.setTextFill(Color.web("#008080"));
                 gameStatus.setText("Tasapeli!");
                 gameStatus.setFont(Font.font("Cambria", 32));
                 gameResult = "Tasapeli";
+                playerButton.setDisable(true);
+                compButton.setDisable(true);
+                gameStart.setDisable(true);
             }
 
         });
@@ -165,7 +189,7 @@ public class VenttiUi extends Application {
         });
         Label playerSpace = new Label("PELAAJA");
 
-        Label compSpace = new Label("TIETOKONE");
+        Label compSpace = new Label("VASTUSTAJA");
 
         VBox toLeft = new VBox();
         toLeft.setSpacing(20);
