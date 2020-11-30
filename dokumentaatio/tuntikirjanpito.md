@@ -22,5 +22,7 @@
 |24.11|2|seuraavien vaiheiden selvitys: tiedon tallennus|
 |25.11|2|vk5 vaatimukset, ohjelman muokkaus|
 |25.11|1|sekvenssikaavio|
-
-summa: 40h (25.11. mennessä)
+|26.11|1|peer review kaveriporukassa|
+|26.11|1|tietojen tallennuksen pohtiminen|
+|30.11|2|vk5 palautus ja testaaminen|
+summa: 44h (30.11. mennessä)
