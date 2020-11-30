@@ -51,6 +51,7 @@ tulokset (pelaajan saama kortti, korttien summa) palautetaan käyttöliittymää
 <img src="https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/venttigame_sekvenssikaavio.png" width="560">
 kuva sekvenssikaaviosta
 
+
 Pääasiallinen rajapinta käyttäjälle on siis VenttiUi, mutta halutessaan katsoa pelin sääntöjä, käyttäjä pääsee nappia
 painamalla siirtymään toiseen näkymään jossa on pelin säännöt. Sieltä pääsee takaisin pelinäkymään jälleen napin
 painalluksella.
