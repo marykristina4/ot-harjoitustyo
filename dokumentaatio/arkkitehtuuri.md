@@ -96,7 +96,7 @@ Pelaaja saa valita pelaajanimen, jolla tulos tallennetaan käyttäen tapahtumank
 Seuraavassa kaaviossa on esitetty pelituloksen GameResult luominen ja tallentaminen sekä pelitulosten hakeminen
 tiedostosta niiden esittämiseksi käyttöliittymässä:
 
-<img src="https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/venttigame_sekvenssikaavio_dao.png" "width=560">
+<img src="https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/venttigame_sekvenssikaavio_dao.PNG" "width=560">
 Kuva sekvenssikaaviosta
 
 
