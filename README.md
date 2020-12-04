@@ -5,6 +5,24 @@ julkaistaan tässä repositoriossa. Suunniteltu aikataulu sovelluksen valmistumi
 vuonna 2020. Tämän suunnitelman mukaan sovellus on siis pelattavissa joulukuun puolivälissä 2020.
 
 
+## UUSI RELEASE: 
+
+[Release vk5](https://github.com/marykristina4/ot-harjoitustyo/releases/tag/viikko5)
+
+## Dokumentaatio
+
+[Käyttöohje](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
+
+[Vaatimusmäärittely](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+
+[Arkkitehtuurikuvaus](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+
+--Tähän pian lisätään testausdokumentti
+
+[Tuntikirjanpito](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+
+## Komentorivitoiminnot
+
 Tämän hetkisen version voi ajaa komennolla:
 
 ```
@@ -25,22 +43,6 @@ Checkstyles-raportin voi ajaa komennolla:
 mvn jxr:jxr checkstyle:checkstyle
 ```
 Checkstyles-raporttia voi tarkastella osoitteesta: target/site/checkstyle.html
-
-## UUSI RELEASE: 
-
-[Release vk5](https://github.com/marykristina4/ot-harjoitustyo/releases/tag/viikko5)
-
-## Dokumentaatio
-
-[Käyttöohje](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
-
-[Vaatimusmäärittely](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
-
-[Arkkitehtuurikuvaus](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
-
---Tähän pian lisätään testausdokumentti
-
-[Tuntikirjanpito](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
 
 
