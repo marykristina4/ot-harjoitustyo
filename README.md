@@ -31,11 +31,16 @@ Checkstyles-raporttia voi tarkastella osoitteesta: target/site/checkstyle.html
 [Release vk5](https://github.com/marykristina4/ot-harjoitustyo/releases/tag/viikko5)
 
 ## Dokumentaatio
-[Tuntikirjanpito](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+
+[Käyttöohje](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
 
 [Vaatimusmäärittely](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
 [Arkkitehtuurikuvaus](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+
+--Tähän pian lisätään testausdokumentti
+
+[Tuntikirjanpito](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
 
 
