@@ -4,20 +4,29 @@ Sovelluksella voi pelata tietokonetta vastaan Venttiä. Sovellus on vielä kehit
 julkaistaan tässä dokumentissa. Suunniteltu aikataulu sovelluksen valmistumiselle on Helsingin yliopiston periodi 2
 vuonna 2020. Tämän suunnitelman mukaan sovellus on siis pelattavissa joulukuun puolivälissä 2020.
 
-UUSI RELEASE: 
+## UUSI RELEASE: 
 
 [Release vk5](https://github.com/marykristina4/ot-harjoitustyo/releases/tag/viikko5)
 
-Tämän hetkisen version voi ajaa komennolla: mvn compile exec:java -Dexec.mainClass=venttigame.MainGame
+Tämän hetkisen version voi ajaa komennolla:
 
-Testauksen voi suorittaa komennolla: mvn test
-
-Testausraportin voi ajaa komennolla: mvn test jacoco:report
-
+```
+mvn compile exec:java -Dexec.mainClass=venttigame.MainGame
+```
+Testauksen voi suorittaa komennolla:
+```
+mvn test
+```
+Testausraportin voi ajaa komennolla: 
+```
+mvn test jacoco:report
+```
 Testausraporttia voi tarkastella osoitteesta: target/site/jacoco/index.html
 
-Checkstyles-raportin voi ajaa komennolla: mvn jxr:jxr checkstyle:checkstyle
-
+Checkstyles-raportin voi ajaa komennolla: 
+```
+mvn jxr:jxr checkstyle:checkstyle
+```
 Checkstyles-raporttia voi tarkastella osoitteesta: target/site/checkstyle.html
 
 ## Dokumentaatio
