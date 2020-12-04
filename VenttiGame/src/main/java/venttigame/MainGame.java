@@ -3,6 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+ /**
+ * Luokka on se, josta ohjelma käynnistyy
+ * 
+ * 
+ */
 package venttigame;
 
 import java.util.Scanner;

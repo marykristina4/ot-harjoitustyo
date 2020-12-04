@@ -1,9 +1,10 @@
+package domain;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -54,5 +55,11 @@ public class DeckTest {
     public void deckSizeIsCorrectAfterCardDraw() {
         testDeck.cardDraw();
         assertEquals("51", Integer.toString(testDeck.deckSize()));
+    }
+
+    @Test
+    public void deckSizeStaysAfterShuffle() {
+        testDeck.shuffle();
+        assertEquals("52", Integer.toString(testDeck.deckSize()));
     }
 }

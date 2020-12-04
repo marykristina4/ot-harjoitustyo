@@ -1,9 +1,10 @@
+package domain;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -11,18 +12,17 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import venttigame.domain.Card;
+import venttigame.domain.Hand;
 
 /**
  *
  * @author marye
  */
-public class CardTest {
+public class HandTest {
 
-    Card testCard;
-    Card smallTestCard;
+    Hand testHand;
 
-    public CardTest() {
-
+    public HandTest() {
     }
 
     @BeforeClass
@@ -35,9 +35,7 @@ public class CardTest {
 
     @Before
     public void setUp() {
-        testCard = new Card(13, 1);
-        System.out.println(testCard.tostring());
-        smallTestCard = new Card(4, 2);
+        testHand = new Hand();
     }
 
     @After
@@ -50,14 +48,25 @@ public class CardTest {
     // @Test
     // public void hello() {}
     @Test
-    public void cardNumberTenOrBelow() {
-        testCard.modifyValues();
-        assertEquals("10", Integer.toString(testCard.getNumber()));
+    public void createdHandExists() {
+        assertTrue(testHand != null);
     }
 
     @Test
-    public void cardNumberStaysIfBelowTen() {
-        testCard.modifyValues();
-        assertEquals("4", Integer.toString(smallTestCard.getNumber()));
+    public void handIsEmptyWhenCreated() {
+        assertEquals("0", Integer.toString(testHand.handSize()));
+    }
+
+    @Test
+    public void addCardIncreasesSize() {
+        testHand.addCard(new Card(1, 1));
+        assertEquals("1", Integer.toString(testHand.handSize()));
+    }
+
+    @Test
+    public void handSumCorrect() {
+        testHand.addCard(new Card(1, 1));
+        testHand.addCard(new Card(2, 2));
+        assertEquals("3", Integer.toString(testHand.handSum()));
     }
 }

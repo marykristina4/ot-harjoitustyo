@@ -7,11 +7,13 @@ package venttigame.domain;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Random;
 
 /**
+ * Luokka Deck tarjoaa korttipakan, jossa 52 korttia. Lisäksi Deck tarjoaa
+ * metodit korttipakan sekoittamiseen, kortin nostamiseen pakasta, kortin
+ * poistamiseen pakasta sekä korttipakan korttien lukumäärän tarkastamiseen.
  *
- * @author marye
+ *
  */
 public class Deck {
 
@@ -26,40 +28,50 @@ public class Deck {
                 this.cardDeck.add(new Card(i, j));
             }
         }
-        //for (int k = 0; k < this.cardDeck.size(); k++) {
-        //    System.out.println(this.cardDeck.get(k).tostring());
-        //}
+
         for (int k = 0; k < this.cardDeck.size(); k++) {
             this.cardDeck.get(k).modifyValues();
         }
-        //for (int k = 0; k < this.cardDeck.size(); k++) {
-        //    System.out.println(this.cardDeck.get(k).tostring());
-        //}
     }
 
+    /**
+     * Metodi korttipakan sekoittamiseksi. Korttien määrä ei muutu.
+     *
+     */
     public void shuffle() {
         //shuffling cards
         Collections.shuffle(cardDeck);
     }
 
+    /**
+     * Metodi kortin nostamiseksi korttipakasta. Kutsuu metodia, joka poistaa
+     * pakasta kortin.
+     *
+     * @return nostettu kortin
+     */
     public Card cardDraw() {
-        Random randCard = new Random();
-        //check from Deck any card
-        //random index
-        int cardIndex = randCard.nextInt(cardDeck.size());
-        //I need to consider later which one is better
-        //Card drawnCard = cardDeck.get(randCard.nextInt(cardDeck.size()));
-        //or should I just take always the last one from Array for performance improvement
         Card drawnCard = this.cardDeck.get(cardDeck.size() - 1);
         removeFromDeck(drawnCard);
         return drawnCard;
     }
 
+    /**
+     * Metodi kortin nostamiseksi korttipakasta.
+     *
+     * @param card Kortti, joka poistetaan pakasta
+     *
+     */
     public void removeFromDeck(Card card) {
         //take the card away from deck from certain index
         this.cardDeck.remove(card);
     }
 
+    /**
+     * Metodi korttipakan koon tarkistamiseksi.
+     *
+     * @return korttipakan koko eli siellä olevien korttien lukumäärä
+     *
+     */
     public int deckSize() {
         return cardDeck.size();
     }

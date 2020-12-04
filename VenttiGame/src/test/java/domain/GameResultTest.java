@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package domain;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -10,33 +11,32 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import venttigame.domain.Card;
-import venttigame.domain.Hand;
+import venttigame.domain.GameResult;
 
 /**
  *
  * @author marye
  */
-public class HandTest {
-
-    Hand testHand;
-
-    public HandTest() {
+public class GameResultTest {
+    GameResult testResult;
+    GameResult testNotResult;
+    
+    public GameResultTest() {
     }
-
+    
     @BeforeClass
     public static void setUpClass() {
     }
-
+    
     @AfterClass
     public static void tearDownClass() {
     }
-
+    
     @Before
     public void setUp() {
-        testHand = new Hand();
+        testResult = new GameResult("testplayer", "testresult");
     }
-
+    
     @After
     public void tearDown() {
     }
@@ -47,25 +47,15 @@ public class HandTest {
     // @Test
     // public void hello() {}
     @Test
-    public void createdHandExists() {
-        assertTrue(testHand != null);
+    public void stringIsCorrect(){
+        assertEquals("testplayer: testresult", testResult.tostring());
     }
-
     @Test
-    public void handIsEmptyWhenCreated() {
-        assertEquals("0", Integer.toString(testHand.handSize()));
+    public void GameResultComparisonWorks(){
+        assertTrue(testResult.equals(testResult));
     }
-
     @Test
-    public void addCardIncreasesSize() {
-        testHand.addCard(new Card(1, 1));
-        assertEquals("1", Integer.toString(testHand.handSize()));
-    }
-
-    @Test
-    public void handSumCorrect() {
-        testHand.addCard(new Card(1, 1));
-        testHand.addCard(new Card(2, 2));
-        assertEquals("3", Integer.toString(testHand.handSum()));
+    public void GameResultComparisonWorksIfNotEqual(){
+        assertTrue(!testResult.equals(testNotResult));
     }
 }

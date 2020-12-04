@@ -25,4 +25,9 @@
 |26.11|1|peer review kaveriporukassa|
 |26.11|1|tietojen tallennuksen pohtiminen|
 |30.11|2|vk5 palautus ja testaaminen|
-summa: 44h (30.11. mennessä)
+|1.12|5|tietojen tallennus ja lukeminen|
+|1.12|2|käyttiksen muokkaus|
+|2.12|3|daojen testaus, lisää testejä muutenkin|
+|2.12|1|vk6 palautuksen vaateet
+|2.12|3|kuvien päivitys, javadoc, käyttöohje|
+summa: 58h (2.12. mennessä)

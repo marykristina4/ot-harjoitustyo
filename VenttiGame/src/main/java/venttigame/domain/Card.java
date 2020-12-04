@@ -6,8 +6,14 @@
 package venttigame.domain;
 
 /**
- *
- * @author marye
+ * Luokka tarjoaa kortti-olion muuttujat ja metodit. 
+ * Kun kortti luodaan, sille annetaan maa (suit) ja arvo (value).
+ * Heti luomisen jälkeen kuvakorttien muuttuja number käsitellään ajamalla
+ * metodi modifyValues(). Siinä kuvakorttien number-muuttuja saa arvon 10.
+ * Korteilla on kaksi arvoa: value erottaa ne toisistaa, eli kuvakorteilla
+ * on eri valuet, mutta kaikkien kuvakorttien number-arvo on 10.
+ * 
+ * 
  */
 public class Card {
 
@@ -20,17 +26,30 @@ public class Card {
         this.suit = suit;
         this.number = value;
     }
-
+/**
+ * Metodi muuttaa kuvakorttien number-arvon 10:ksi.
+ *
+ * 
+ */
     public void modifyValues() {
         if (this.number > 10) {
             this.number = 10;
         }
     }
-
+/**
+ * Metodi palauttaa number-arvon.
+ *
+ * @return kortin number-arvo 
+ */
     public int getNumber() {
         return this.number;
     }
-
+/**
+ * Metodi palauttaa kortin string-muotoisena esityksenä
+ * jollaisena se näytetään käyttöliittymässä pelaajalle.
+ *
+ * @return kortin string-muoto.
+ */
     public String tostring() {
         String cardDetails = "";
         if (value == 1) {
