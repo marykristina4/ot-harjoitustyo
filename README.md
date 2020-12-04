@@ -1,12 +1,9 @@
 # Ohjelmistotekniikka, harjoitustyö: VenttiGame
 
-Sovelluksella voi pelata tietokonetta vastaan Venttiä. Sovellus on vielä kehityksen alla. Päivitykset kehitystyössä 
-julkaistaan tässä dokumentissa. Suunniteltu aikataulu sovelluksen valmistumiselle on Helsingin yliopiston periodi 2
+Sovelluksella voi pelata tietokonetta tai muuta vastustajaa vastaan Venttiä. Sovellus on vielä kehityksen alla. Päivitykset kehitystyössä 
+julkaistaan tässä repositoriossa. Suunniteltu aikataulu sovelluksen valmistumiselle on Helsingin yliopiston periodin 2 loppu
 vuonna 2020. Tämän suunnitelman mukaan sovellus on siis pelattavissa joulukuun puolivälissä 2020.
 
-## UUSI RELEASE: 
-
-[Release vk5](https://github.com/marykristina4/ot-harjoitustyo/releases/tag/viikko5)
 
 Tämän hetkisen version voi ajaa komennolla:
 
@@ -28,6 +25,10 @@ Checkstyles-raportin voi ajaa komennolla:
 mvn jxr:jxr checkstyle:checkstyle
 ```
 Checkstyles-raporttia voi tarkastella osoitteesta: target/site/checkstyle.html
+
+## UUSI RELEASE: 
+
+[Release vk5](https://github.com/marykristina4/ot-harjoitustyo/releases/tag/viikko5)
 
 ## Dokumentaatio
 [Tuntikirjanpito](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
