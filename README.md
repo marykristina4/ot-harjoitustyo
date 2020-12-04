@@ -5,7 +5,7 @@ julkaistaan tässä repositoriossa. Suunniteltu aikataulu sovelluksen valmistumi
 vuonna 2020. Tämän suunnitelman mukaan sovellus on siis pelattavissa joulukuun puolivälissä 2020.
 
 
-## UUSI RELEASE: 
+## Releaset: 
 
 [Release vk5](https://github.com/marykristina4/ot-harjoitustyo/releases/tag/viikko5)
 
