@@ -18,8 +18,11 @@ Ohjelma käynnistetään komennolla
 ```
 java -jar VenttiGame.jar
 ```
-tai ajamalla komentoriviltä mvn compile exec:java -Dexec.mainClass=venttigame.MainGame kansiossa VenttiGame
+tai ajamalla komentoriviltä kansiossa VenttiGame:
 
+```
+ mvn compile exec:java -Dexec.mainClass=venttigame.MainGame
+```
 ## Pelin käynnistäminen
 
 Kun peli käynnistetään, avautuu pelinäkymä
