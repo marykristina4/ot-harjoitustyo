@@ -30,4 +30,6 @@
 |2.12|3|daojen testaus, lisää testejä muutenkin|
 |2.12|1|vk6 palautuksen vaateet
 |2.12|3|kuvien päivitys, javadoc, käyttöohje|
-summa: 58h (2.12. mennessä)
+|3.12|2|dokumentaation päivitystä, peer review -sessio|
+|4.12|2|dokkareiden päivitys, vaatimusten tarkistus|
+summa: 62h (4.12. mennessä)
