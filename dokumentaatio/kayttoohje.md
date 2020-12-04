@@ -24,7 +24,7 @@ tai ajamalla komentoriviltä mvn compile exec:java -Dexec.mainClass=venttigame.M
 
 Kun peli käynnistetään, avautuu pelinäkymä
 
---tähän myöhemmin kuva <img src="" width="400">
+--tähän myöhemmin kuva <img src="">
 
 ## Peliohjeet
 
@@ -47,12 +47,12 @@ painamalla nappia "Pelaaja lopettaa, vastustajalle kortti" vuoro siirtyy tietoko
 vastustaja ottaa kortteja painamalla nappia "Vastustajalle kortti" kunnes peli loppuu joko pelaajan voittoon, häviöön
 tai tasapeliin.
 
-### Pelitulosten tallentaminen
+## Pelitulosten tallentaminen
 
 Pelaaja voi tallentaa pelin päätyttyä pelituloksensa kirjoittamalla tekstikenttään "Nimesi" haluamansa pelaajanimen.
 Samalla pelaajalla voi olla näitä useita. Tulosten tallentaminen ei ole pakollista.
 
-### Pelitulosten tutkiminen
+## Pelitulosten tutkiminen
 
 Painamalla nappia "Katso pelituloksia" pääsee näkymään jossa voi painamalla nappia "Näytä kaikki tulokset" nähdä
 kaikki tallennetut tulokset, tai käyttämällä hakutoiminnallisuutta määritelläm minkä pelaajanimen tulokset haluaa
