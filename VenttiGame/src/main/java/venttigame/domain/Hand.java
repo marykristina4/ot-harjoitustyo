@@ -48,4 +48,7 @@ public class Hand {
     public int handSize() {
         return cardHand.size();
     }
+    public void emptyHand() {
+        cardHand.removeAll(cardHand);
+    }
 }

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package dao;
 
 import java.io.File;
@@ -21,64 +16,74 @@ import static org.junit.Assert.assertNotEquals;
 import org.junit.Test;
 import venttigame.dao.FileGameResultDao;
 
-/**
- *
- * @author marye
- */
 public class FileGameResultDaoTest {
+
     @Rule
-    public TemporaryFolder testFolder = new TemporaryFolder();    
-  
-    File resultFile;  
-    GameResultDao dao;    
-    
+    public TemporaryFolder testFolder = new TemporaryFolder();
+
+    File resultFile;
+    GameResultDao dao;
+
     @Before
     public void setUp() throws Exception {
-        resultFile = testFolder.newFile("testfile_results.txt");  
+        resultFile = testFolder.newFile("testfile_results.txt");
         GameResultDao gameResultDao = new FakeGameResultDao();
         gameResultDao.create(new GameResult("testplayer", "Ei tulosta"));
-        
+
         try (FileWriter file = new FileWriter(resultFile.getAbsolutePath())) {
             file.write("testtestplayer;tulos puuttuu\n");
         }
-        
-        dao = new FileGameResultDao(resultFile.getAbsolutePath());        
+
+        dao = new FileGameResultDao(resultFile.getAbsolutePath());
     }
-   
+
     @Test
-    public void gameResultAreReadCorrectlyFromFile() {
+    public void gameResultNameAreReadCorrectlyFromFile() {
         List<GameResult> results = dao.getAll();
         assertEquals(1, results.size());
         GameResult gameResult = results.get(0);
         assertEquals("testtestplayer", gameResult.getName());
-        assertEquals("tulos puuttuu", gameResult.getResult());
+    }
 
-    }  
     @Test
-    public void findByNameWorks(){
+    public void gameResultResultAreReadCorrectlyFromFile() {
+        List<GameResult> results = dao.getAll();
+        assertEquals(1, results.size());
+        GameResult gameResult = results.get(0);
+        assertEquals("tulos puuttuu", gameResult.getResult());
+    }
+
+    @Test
+    public void findByNameWorks() {
         List<GameResult> gameResult = dao.findByName("testtestplayer");
-        
         assertEquals("testtestplayer", gameResult.get(0).getName());
     }
-    
-       
-    
+
     @Test
-    public void createdTodosAreListed() throws Exception {    
-        dao.create(new GameResult("newplayer","no information"));
-        
+    public void createdResultsAreListed() throws Exception {
+        dao.create(new GameResult("newplayer", "no information"));
         List<GameResult> results = dao.getAll();
         assertEquals(2, results.size());
+    }
+
+    @Test
+    public void createdResultsAreListedNameCorrect() throws Exception {
+        dao.create(new GameResult("newplayer", "no information"));
+        List<GameResult> results = dao.getAll();
         GameResult gameResult = results.get(1);
         assertEquals("newplayer", gameResult.getName());
+    }
+
+    @Test
+    public void createdResultsAreListedResultCorrect() throws Exception {
+        dao.create(new GameResult("newplayer", "no information"));
+        List<GameResult> results = dao.getAll();
+        GameResult gameResult = results.get(1);
         assertNotEquals("tulos puuttuu", gameResult.getResult());
-    }     
-    
+    }
+
     @After
     public void tearDown() {
         resultFile.delete();
     }
 }
-
-
-

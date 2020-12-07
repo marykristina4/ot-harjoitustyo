@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package venttigame.domain;
 
 import java.util.ArrayList;
@@ -18,11 +13,12 @@ import java.util.Collections;
 public class Deck {
 
     public ArrayList<Card> cardDeck;
+    public ArrayList<Card> removedCards;
 
-    //let's create cards so that there is 1 card per value 1-13 and suit 1-4
     public Deck() {
         this.cardDeck = new ArrayList<>();
-        //System.out.println("testi");
+        this.removedCards = new ArrayList<>();
+
         for (int i = 1; i <= 13; i++) {
             for (int j = 1; j <= 4; j++) {
                 this.cardDeck.add(new Card(i, j));
@@ -39,7 +35,6 @@ public class Deck {
      *
      */
     public void shuffle() {
-        //shuffling cards
         Collections.shuffle(cardDeck);
     }
 
@@ -51,8 +46,10 @@ public class Deck {
      */
     public Card cardDraw() {
         Card drawnCard = this.cardDeck.get(cardDeck.size() - 1);
+        removedCards.add(drawnCard);
         removeFromDeck(drawnCard);
         return drawnCard;
+
     }
 
     /**
@@ -62,7 +59,6 @@ public class Deck {
      *
      */
     public void removeFromDeck(Card card) {
-        //take the card away from deck from certain index
         this.cardDeck.remove(card);
     }
 
@@ -76,4 +72,13 @@ public class Deck {
         return cardDeck.size();
     }
 
+    public void cardsBackToDeck() {
+
+        for (int i = 0; i < removedCards.size(); i++) {
+            Card cardToAdd = removedCards.get(i);
+            cardDeck.add(cardToAdd);
+
+        }
+        removedCards.clear();
+    }
 }

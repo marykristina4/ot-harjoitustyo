@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package venttigame.domain;
 
 import java.util.List;
@@ -80,5 +76,8 @@ public class GameService {
         Card drawnCard = gameDeck.cardDraw();
         hand.addCard(drawnCard);
         return drawnCard.tostring();
+    }
+    public void restartGame() {
+        gameDeck.cardsBackToDeck();
     }
 }

@@ -32,4 +32,6 @@
 |2.12|3|kuvien päivitys, javadoc, käyttöohje|
 |3.12|2|dokumentaation päivitystä, peer review -sessio|
 |4.12|2|dokkareiden päivitys, vaatimusten tarkistus|
-summa: 62h (4.12. mennessä)
+|4.12|2|uusi peli -toiminnallisuus|
+|7.12|2|vk 6 fiksaukset|
+summa: 66h (7.12. mennessä)

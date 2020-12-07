@@ -1,12 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
- /**
+/**
  * Luokka hoitaa käyttöliittymän toiminnallisuudet.
- * 
- * 
+ *
+ *
  */
 package venttigame.ui;
 
@@ -33,10 +28,6 @@ import venttigame.domain.GameResult;
 import venttigame.domain.GameService;
 import venttigame.domain.Hand;
 
-/**
- *
- * @author marye
- */
 public class VenttiUi extends Application {
 
     private String playerName;
@@ -46,6 +37,12 @@ public class VenttiUi extends Application {
     private Hand playerHand;
     private Hand computerHand;
 
+    /**
+     * Metodi luo puitteet tiedostotallennukselle sekä luo gameService-olion
+     * kuten myös hand-oliot.
+     *
+     *
+     */
     @Override
     public void init() throws Exception {
 
@@ -62,6 +59,11 @@ public class VenttiUi extends Application {
         computerHand = new Hand();
     }
 
+    /**
+     * Metodi hoitaa käyttöliittymän ulkonäön ja toiminnallisuudet.
+     *
+     *
+     */
     @Override
     public void start(Stage window) {
         BorderPane setUp = new BorderPane();
@@ -73,7 +75,12 @@ public class VenttiUi extends Application {
         gameStart.setStyle("-fx-border-color: #010b0d; ");
         gameStart.setStyle("-fx-background-color: #69c4d2; ");
         Label gameStatus = new Label("Jaa aloituskortit aloittaaksesi pelin");
+        gameStatus.setTextFill(Color.web("#2c9fb8"));
+        gameStatus.setFont(Font.font("Cambria", 14));
         Button resultButton = new Button("Katso pelituloksia");
+        Button restartButton = new Button("Aloita uusi peli");
+        restartButton.setStyle("-fx-border-color: #F576A3; ");
+        restartButton.setDisable(true);
 
         Button playerButton = new Button("Pelaajalle kortti");
         playerButton.setDisable(true);
@@ -114,8 +121,10 @@ public class VenttiUi extends Application {
         //game events
         gameStart.setOnAction((event) -> {
             gameStatus.setText("Peli kesken");
+            gameStatus.setText("Peli kesken");
             playerButton.setDisable(false);
             compButton.setDisable(false);
+            gameStart.setDisable(true);
             playerStartCards.setText(gameService.cardFromDeck(playerHand) + " ja " + gameService.cardFromDeck(playerHand));
             playerSum.setText(Integer.toString(playerHand.handSum()));
             compStartCards.setText(gameService.cardFromDeck(computerHand) + " ja " + gameService.cardFromDeck(computerHand));
@@ -123,6 +132,7 @@ public class VenttiUi extends Application {
         });
         playerButton.setOnAction((event) -> {
             playerNewCard.setText(gameService.cardFromDeck(playerHand));
+            gameStart.setDisable(true);
             playerSum.setText(Integer.toString(playerHand.handSum()));
             if (playerHand.handSum() == 21) {
                 gameStatus.setTextFill(Color.web("#52af52"));
@@ -135,6 +145,7 @@ public class VenttiUi extends Application {
                 save.setDisable(false);
                 saved.setDisable(true);
                 nameField.setDisable(false);
+                restartButton.setDisable(false);
             } else if (playerHand.handSum() >= 21) {
                 gameStatus.setTextFill(Color.web("#fe2e2e"));
                 gameStatus.setText("Game Over!");
@@ -147,6 +158,7 @@ public class VenttiUi extends Application {
                 save.setDisable(false);
                 saved.setDisable(true);
                 nameField.setDisable(false);
+                restartButton.setDisable(false);
             }
 
         });
@@ -168,6 +180,7 @@ public class VenttiUi extends Application {
                 save.setDisable(false);
                 saved.setDisable(true);
                 nameField.setDisable(false);
+                restartButton.setDisable(false);
             } else if (computerHand.handSum() >= 21) {
                 gameStatus.setTextFill(Color.web("#52af52"));
                 gameStatus.setText("Voitto pelaajalle!");
@@ -179,6 +192,7 @@ public class VenttiUi extends Application {
                 save.setDisable(false);
                 saved.setDisable(true);
                 nameField.setDisable(false);
+                restartButton.setDisable(false);
             } else if (computerHand.handSum() > playerHand.handSum()) {
                 gameStatus.setTextFill(Color.web("#fe2e2e"));
                 gameStatus.setText("Game Over!");
@@ -191,6 +205,7 @@ public class VenttiUi extends Application {
                 save.setDisable(false);
                 saved.setDisable(true);
                 nameField.setDisable(false);
+                restartButton.setDisable(false);
             } else if (computerHand.handSum() == playerHand.handSum()) {
                 gameStatus.setTextFill(Color.web("#008080"));
                 gameStatus.setText("Tasapeli!");
@@ -202,13 +217,16 @@ public class VenttiUi extends Application {
                 save.setDisable(false);
                 saved.setDisable(true);
                 nameField.setDisable(false);
+                restartButton.setDisable(false);
             }
 
         });
 
         Label playerSpace = new Label("PELAAJA");
+        playerSpace.setTextFill(Color.web("#0068a3"));
 
-        Label compSpace = new Label("VASTUSTAJA");
+        Label compSpace = new Label("TIETOKONE/VASTUSTAJA");
+        compSpace.setTextFill(Color.web("#a30076"));
 
         VBox toLeft = new VBox();
         toLeft.setSpacing(20);
@@ -249,6 +267,7 @@ public class VenttiUi extends Application {
         VBox toCenter = new VBox();
         toCenter.setSpacing(10);
         toCenter.getChildren().add(resultButton);
+        toCenter.getChildren().add(restartButton);
         toCenter.getChildren().add(gameStart);
         toCenter.getChildren().add(gameStatus);
 
@@ -260,7 +279,6 @@ public class VenttiUi extends Application {
 
         Scene mainView = new Scene(setUp);
 
-        //toka näkymä
         Button toGame = new Button("Paina tästä palataksesi peliin");
         Label instructionText = new Label(TextToInstruct);
 
@@ -271,19 +289,19 @@ public class VenttiUi extends Application {
 
         Scene instructionView = new Scene(instrSet);
 
-        //tulosnäkymä
         Button backToGame = new Button("Paina tästä palataksesi peliin");
         Button showResults = new Button("Näytä kaikki tulokset");
         Button showFilteredResults = new Button("Näytä valitsemasi pelaajan tulokset");
         TextField searchField = new TextField();
-        searchField.setPromptText("Kirjoita pelaaja");
+        searchField.setPromptText("Kirjoita pelaaja, jonka tulokset haluat nähdä");
         Label resultText = new Label();
         ListView<String> list = new ListView<>();
-        //napin painalluksella tietyn pelaajan tulokset
+
         showFilteredResults.setOnAction((ActionEvent e) -> {
             if ((searchField.getText() != null && !searchField.getText().isEmpty())) {
                 searchName = searchField.getText();
             }
+            resultText.setText("Suodatetut pelitulokset:");
             List<GameResult> listSearchResults = gameService.findByName(searchName);
 
             ObservableList<String> items = FXCollections.observableArrayList();
@@ -293,7 +311,7 @@ public class VenttiUi extends Application {
             }
             list.setItems(items);
         });
-        //napin painalluksella tulokset
+
         showResults.setOnAction((event) -> {
 
             resultText.setText("Kaikki pelitulokset:");
@@ -316,7 +334,6 @@ public class VenttiUi extends Application {
 
         Scene resultView = new Scene(resultSet);
 
-        //scene events
         instructions.setOnAction((event) -> {
             window.setScene(instructionView);
         });
@@ -331,17 +348,34 @@ public class VenttiUi extends Application {
             window.setScene(mainView);
         });
 
-        //nimen tallennus
         save.setOnAction((ActionEvent e) -> {
             if ((nameField.getText() != null && !nameField.getText().isEmpty())) {
                 playerName = nameField.getText();
             }
-            //tässä pitäisi käyttää pelitulosta ja saatua nimeä ja tallentaa johonkin
+
             gameService.createGameResult(playerName, gameResult);
             saved.setText("Tulos tallennettu");
             saved.setTextFill(Color.web("#a5043d"));
             nameField.setDisable(true);
             save.setDisable(true);
+        });
+        restartButton.setOnAction((ActionEvent e) -> {
+            gameService.restartGame();
+            playerHand.emptyHand();
+            computerHand.emptyHand();
+            gameStart.setDisable(false);
+            playerStartCards.setText("");
+            compStartCards.setText("");
+            playerSum.setText("");
+            compSum.setText("");
+            playerNewCard.setText("");
+            compNewCard.setText("");
+            gameStatus.setText("");
+            gameStatus.setTextFill(Color.web("#2c9fb8"));
+            gameStatus.setFont(Font.font("Cambria", 16));
+            gameStatus.setText("Jaa aloituskortit aloittaaksesi pelin");
+            gameStatus.setRotate(0);
+            restartButton.setDisable(true);
         });
         window.setTitle("Venttipeli");
         window.setScene(mainView);
@@ -349,12 +383,20 @@ public class VenttiUi extends Application {
     }
 
     private static final String TextToInstruct
-            = "Aloita peli - pelaajalle ja tietokoneelle jaetaan 2 korttia\n"
-            + "Pelaajalle lisäkortti - Jos summa yli 21, pelaaja häviää. Jos alle, \n"
-            + "vielä mukana pelissä ja edelleen pelaajan vuoro ja voi päättää ottaako uuden kortin\n"
-            + "Tietokoneelle lisäkortti - Jos summa yli 21, pelaaja voittaa. Jos summa\n"
-            + "vähemmän kun pelaajalla, tietokoneelle uusi kortti valitsemalla uudelleen 3. Jos summa\n"
-            + " tasan 21, tietokone voittaa. Jos summa sama kun pelaajalla, tasapeli.";
+            = "Tarkemmat peliohjeet sovelluksen dokumentaatiossa Käyttöohjeet.\n"
+            +"\n"
+            + "Jaa aloituskortit - pelaajalle ja vastustajalle jaetaan 2 korttia.\n"
+            + "Pelaajalle kortti - Pelaajalle uusi kortti.\n"
+            + "Jos summa yli 21, pelaaja häviää. Jos alle, vielä mukana pelissä \n"
+            + "ja edelleen pelaajan vuoro ja voi päättää ottaako uuden kortin.\n"
+            + "\n"
+            + "Pelaaja lopettaa, vastustajalle kortti - Vuoro vastustajalle ja tälle kortti\n"
+            + "Jos vastustajan korttien summa yli 21, pelaaja voittaa. Jos summa vähemmän\n"
+            + "kun pelaajalla, vastustajalle uusi kortti samalla painikkeella. Jos summa\n"
+            + " tasan 21, tietokone voittaa. Jos summa sama kun pelaajalla, tasapeli.\n"
+            + "\n"
+            + "Tallenna nimesi - Pelituloksen voi tallentaa halutessaa kirjottamalla nimensä tekstikenttään.\n"
+            + "Katso pelituloksia - voit katsoa kaikkia tallennettuja tuloksia tai tietyn pelaajanimen. ";
 
     public static void main(String[] args) {
         launch(VenttiUi.class);
