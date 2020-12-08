@@ -32,6 +32,10 @@
 |2.12|3|kuvien päivitys, javadoc, käyttöohje|
 |3.12|2|dokumentaation päivitystä, peer review -sessio|
 |4.12|2|dokkareiden päivitys, vaatimusten tarkistus|
-|4.12|2|uusi peli -toiminnallisuus|
-|7.12|2|vk 6 fiksaukset|
-summa: 66h (7.12. mennessä)
+|4.12|4|uusi peli -toiminnallisuus|
+|4.12|2|uusi peli -toiminnallisuuden testaus
+|7.12|3|vk 6 fiksaukset|
+|7.12|2|virheen korjaus korttien palauttamisessa pakkaan
+|7.12|2|uusia testejä, vanhojen kommenttien poistot
+|7.12|1|jar-paketin muodostus
+summa: 77h (7.12. mennessä)
