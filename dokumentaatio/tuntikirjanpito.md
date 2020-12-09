@@ -40,4 +40,4 @@
 |7.12|1|jar-paketin muodostus|
 |8.12|1|testaaminen koulun koneella|
 |9.12|2|dokumentaation päivitys|
-summa: 80h (9.12. mennessä)
+|summa|80h|9.12. mennessä|
