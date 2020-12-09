@@ -6,7 +6,7 @@ Sovelluksen voi joko kloonata omalle koneelleen tai ladata jar-tiedoston. Luetha
 
 ## Releaset: 
 
-[Uusin relese](https://github.com/marykristina4/ot-harjoitustyo/releases)
+[Releaset](https://github.com/marykristina4/ot-harjoitustyo/releases)
 
 ## Dokumentaatio
 
