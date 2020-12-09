@@ -1,13 +1,12 @@
-# Ohjelmistotekniikka, harjoitustyö: VenttiGame
+# VenttiGame
 
-Sovelluksella voi pelata tietokonetta tai muuta vastustajaa vastaan Venttiä. Sovellus on vielä kehityksen alla. Päivitykset kehitystyössä 
-julkaistaan tässä repositoriossa. Suunniteltu aikataulu sovelluksen valmistumiselle on Helsingin yliopiston periodin 2 loppu
-vuonna 2020. Tämän suunnitelman mukaan sovellus on siis pelattavissa joulukuun puolivälissä 2020.
+Tämä sovellus on kehitetty kurssille Ohjelmistotekniikka syksyllä 2020. Sovelluksella voi pelata tietokonetta tai muuta vastustajaa vastaan Venttiä.
+Sovelluksen voi joko kloonata omalle koneelleen tai ladata jar-tiedoston. Luethan käyttöohjeen aluksi!
 
 
 ## Releaset: 
 
-[Release vk5](https://github.com/marykristina4/ot-harjoitustyo/releases/tag/viikko5)
+[Uusin relese](https://github.com/marykristina4/ot-harjoitustyo/releases)
 
 ## Dokumentaatio
 
@@ -17,7 +16,7 @@ vuonna 2020. Tämän suunnitelman mukaan sovellus on siis pelattavissa joulukuun
 
 [Arkkitehtuurikuvaus](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
---Tähän pian lisätään testausdokumentti
+[Testausdokumentti]
 
 [Tuntikirjanpito](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
@@ -38,11 +37,29 @@ mvn test jacoco:report
 ```
 Testausraporttia voi tarkastella osoitteesta: target/site/jacoco/index.html
 
-Checkstyles-raportin voi ajaa komennolla: 
+### Suoritettavan jarin generointi
+
+Jar-tiedoston voi luoda komennolla:
+```
+mvn package
+```
+Generoitu jar löytyy osoitteesta target ja on nimeltään VenttiGame-1.0-SNAPSHOT.jar 
+
+### Javadoc
+
+Käytössä on javadoc, ja tämän dokumentaation voi muodostaa komennolla:
+```
+mvn javadoc:javadoc
+```
+Generoitu JavaDoc löytyy hakemistosta target/site/apidocs/
+
+### Checkstyle
+
+Käytössä on myös tyylin ylläpidon avustamiseen checkstyle, ja halutut tyyliseikat on määritelty tiedostossa [checkstyle.xml](https://github.com/marykristina4/ot-harjoitustyo/blob/master/VenttiGame/checkstyle.xml). Tarkistuksen voi tehdä ajamalla komennon:
 ```
 mvn jxr:jxr checkstyle:checkstyle
 ```
-Checkstyles-raporttia voi tarkastella osoitteesta: target/site/checkstyle.html
+Raportti löytyy hakemistosta  target/site/checkstyle.html
 
 
 
