@@ -29,7 +29,6 @@ tai ajamalla komentoriviltä kansiossa VenttiGame:
 Kun peli käynnistetään, avautuu pelinäkymä:
 
 <img src="https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/peli_kun_kaynnistetty.PNG" width="500">
-
 Kuva pelinäkymästä
 
 
