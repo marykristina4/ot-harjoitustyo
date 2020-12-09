@@ -1,5 +1,7 @@
 # Vaatimusmäärittely
 
+Huom: Sovelluksen nykyinen toiminnallisuus päivitetty dokumenttiin [Määrittely](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/maarittely.md).
+
 ## Sovelluksen tarkoitus
 
 Sovellus on peli nimeltä Ventti, jota yksi pelaaja voi pelata kerrallaan tietokonetta vastaan. Sovelluksen toiminta
