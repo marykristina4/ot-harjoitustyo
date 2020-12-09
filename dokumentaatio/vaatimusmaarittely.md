@@ -4,13 +4,14 @@
 
 Sovellus on peli nimeltä Ventti, jota yksi pelaaja voi pelata kerrallaan tietokonetta vastaan. Sovelluksen toiminta
 mukailee korttipeliä Ventti, joka on suomalainen vastine BlackJackille (Tämä osuus toteutettu 20.11.2020 ja päivitetty
-30.11.2020). Pelaaja pystyy rekisteröitymään ja tallentamaan pelituloksensa (tehty 2.12. toteutus, jossa pelaaja voi
+30.11.2020). Pelaaja pystyy rekisteröitymään ja tallentamaan pelituloksensa (tehty 2.12.2020 toteutus, jossa pelaaja voi
 kirjoittaa nimensä jolla tallentaa pelituloksen. Tämä toteutettu näin kirjautumisen sijaan).
 
 ## Käyttäjät
 
 Sovelluksella on vain peruskäyttäjiä, eli pelaajia, jotka voivat omalla nimellään kirjautua ja tallentaa
-pelituloksiaan.(tämä toteutettu niin että pelaaja ensin pelaa, sitten kirjaa nimensä ja talletaa tuloksen halutessaan).
+pelituloksiaan.(tämä toteutettu 2.12.2020 niin että pelaaja ensin pelaa, sitten kirjaa nimensä ja talletaa
+tuloksen halutessaan).
 
 
 ## Käyttöliittymäluonnos
@@ -24,7 +25,8 @@ eikä pelituloksia. Graafinen käyttöliittymä tehty 30.11.2020.). Kommentti 2.
 eli varsinainen kirjautuminen on turha, koska pelituloksen tallennus on vapaaehtoista. Siis pelaaja pelaa ensin, ja
 voi pelaamisen jälkeen tallentaa pelituloksen halutessaan. Samalla pelaajalla voi siis olla eri pelaajanimiäkin. Lisäksi
 toteutettu toiminnallisuus josta voi tarkastella kaikkia aiempia pelituloksia tai vaan tietyn pelaajan. 
-
+Kommentti 9.12.2020: Pohdittu uudelleen asiaa, ja pysytty päätöksessä, eli kirjautumista ei peliin tarvitse, nimi
+kysytään ja tallennetaan kunkin pelin jälkeen pelaajan niin halutessa.
 
 ## Perusversion tarjoama toiminnallisuus
 
@@ -38,6 +40,9 @@ häviää jos sen korttien summa on yli 21 (Tämä toteutettu 20.11.2020, lisäk
 Huomio 30.11.2020: Peliä voi periaatteessa pelata myös kaksi pelaajaa ajatellen että toinen on "tietokone". Pitää
 vielä pohtia miten nimetään: olisiko tietokone -> vastustaja? Kommentti 2.12.2020: Peliä voi pelata yksinpelinä niin
 että vastassa on "tietokone". Jos pelaajia on kaksi, jälkimmäinen pelaaja noudattaa samoja sääntöjä kun tietokone.  
+9.12.2020: Lisätty toiminnallisuus uuteen peliin: Kun peli on pelattu loppuun, voi nappia painamalla aloittaa uuden
+pelin. Tämä on pelaajan kannalta paljon mukavampaa kun että joutuisi joka kerta sulkemaan ohjelman ja ajamaan
+sen uudestaan. Nyt tämän voi siis tehdä napinpainalluksella.
 
 ### Ennen kirjautumista
 
@@ -52,8 +57,8 @@ Kommentti 2.12.2020: Päätetty toteuttaa alempi vaihtoehto, eli ei kirjautumist
  mvn compile exec:java -Dexec.mainClass=venttigame.MainGame, tehty 20.11.2020 ja testattu 23.11.2020 ja graafinen
 käyttöliittymä lisätty 30.11.2020.)
 - Pelaaja voi kirjautua ulos järjestelmästä.
-Kommentti: Ei uloskirjautumista, koska ei myöskään sisäänkirjautumista. Kun peli loppuu, voi tallentaa tuloksensa tai
-tarkastella aiempia pelituloksia.
+Kommentti (päivitetty) 9.12.2020: Ei uloskirjautumista, koska ei myöskään sisäänkirjautumista. Kun peli loppuu,
+voi tallentaa tuloksensa, tarkastella aiempia pelituloksia tai aloittaa uuden pelin.
 
 ## Jatkokehitysideoita	
 
@@ -65,3 +70,9 @@ kehittää hienompaan suuntaan. Kommentti 2.12.2020: Alussa voisi olla valinta k
 niin muodostuu useampi käsi. Tällöin voisi olla niin että vain voittaja tallentaa tuloksen, eli se sama jo nyt
 toteutettu toiminnallisuus kävisi tähänkin. Tällöin pelaajat pelaisivat toki toisiaan vastaan eikä tietokonetta.
 
+Kommentti 9.12.2020: Peliä voi nykyversiona pelata 1 tai 2 pelaajaa: joko 1 pelaa "tietokonetta" vastaan, tai 2 
+pelaajaa toisiaan vastaan. Käyttöliittymä on rakennettu tähän tarkoitukseen: jos pelaajia haluttaisiin enemmän,
+tämä aiheuttaisi muutoksia käyttöliittymään.
+
+Kommentti 9.12.2020: Hyvä jatkotoiminnallisuus, joka olisi helposti tehtävissä nykyversioon, olisi "peliturnaus", eli
+voitaisiin valita esim. 10 pelin satsi, ja sen lopputulos tallennettaisiin.

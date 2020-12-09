@@ -38,11 +38,15 @@ sen numeroarvo.
 Luokassa Deck on korttipakan toiminnallisuudet:
 - korttipakan sekoittaminen shuffle()
 - kortin nostaminen pakasta cardDraw()
+- kortin poistaminen pakasta cardRemove(Card)
 - pakan koon kysymiseen deckSize()
+- korttien palauttamiseksi pelipakkaan cardsBackToDeck()
 
 Luokassa Hand on seuraavat toiminnallisuudet:
 - kortin lisääminen käteen addCard(Card)
 - kädessä olevien korttien numeroarvojen laskeminen yhteen handSum()
+- kädessä olevien korttien lukumäärän laskeminen handSize()
+- käden tyhjentäminen korteista emptyHand()
 
 Luokassa GameService on korttipakka Deck kyseiselle pelille, että GameResultDao, jota käytetään tulosten tallentami-
 seen. Toiminnallisuudet luokassa GameService ovat:
@@ -106,8 +110,9 @@ Dao-luokkien testauksessa käytetään keskusmuistiin tallentavia toteutuksia.
 ## Huomioita ohjelmasta / kehitysehdotuksia / heikkouksia
 
 Moninpeliä ei ole vielä toteutettu, sen tekemiseksi tulee myös käyttöliittymää uudelleensuunnitella.
-Käyttöliittymän kaikki toiminnallisuus on samassa luokassa, ja jo tässä versiossa se on rajoilla pitäisikö jakoa
-useampaan osaan tehdä: ainakin jos pelaajia halutaan enemmän ja pelin toteutusta laajentaa, on jakoa tehtävä.
+Käyttöliittymän kaikki toiminnallisuus on samassa luokassa ja suurin osa tapahtuu metodissa start(), ja jo tässä
+versiossa se on rajoilla pitäisikö jakoa useampaan osaan tehdä: ainakin jos pelaajia halutaan enemmän ja pelin
+toteutusta laajentaa, on jakoa tehtävä.
 
 Testauksen monipuolisuutta voisi kasvattaa: toki peli itsessään on aika yksinkertainen eikä siinä mielessä siinä
 olekaan kovin monimutkaista logiikkaa. Voisi pohtia myös kuuluisiko myös Hand-luokka paremmin luokan GameService

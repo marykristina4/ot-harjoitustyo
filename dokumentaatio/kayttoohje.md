@@ -1,6 +1,6 @@
 # Käyttöohje
 
-Lataa tiedosto [VenttiGame.jar](https://github.com/marykristina4/ot-harjoitustyo/releases/tag/viikko5)
+Lataa uusin versio [VenttiGame.jar](https://github.com/marykristina4/ot-harjoitustyo/releases)
 
 ## Konfigurointi
 
@@ -10,6 +10,7 @@ jossa määritellään tiedoston nimi, johon pelitulokset tallennetaan. Tiedosto
 ```
 gameFile=results.txt
 ```
+Tässä siis tulokset tallennetaan results.txt -nimiseen tiedostoon. Tätä tiedostoa ei tarvitse olla valmiiksi luotuna.
 
 ## Ohjelman käynnistäminen
 
@@ -27,17 +28,26 @@ tai ajamalla komentoriviltä kansiossa VenttiGame:
 
 Kun peli käynnistetään, avautuu pelinäkymä
 
---tähän myöhemmin kuva <img src="">
+<img src="">
+
+Kuva pelinäkymästä
+
 
 ## Peliohjeet
 
 Jos peli ei ole ennaltaan tuttu, voi peliohjeet lukea näkymästä, joka aukeaa painamalla nappia "Paina tästä
 nähdäksesi ohjeet". Ohjenäkymästä pääsee takaisin peliin painamalla nappia "paina tästä päästäksesi peliin".
 
+
+Kuva napista ohjeisiin
+
 ### Pelin aloitus
 
 Peli alkaa painamalla nappia "Jaa aloituskortit". Tällöin sekä pelaajalle että tietokoneelle/vastustajalle jaetaan
 kaksi korttia.
+
+
+Kuva pelin aloittamisesta
 
 ### Pelin edistyminen
 
@@ -55,8 +65,18 @@ tai tasapeliin.
 Pelaaja voi tallentaa pelin päätyttyä pelituloksensa kirjoittamalla tekstikenttään "Nimesi" haluamansa pelaajanimen.
 Samalla pelaajalla voi olla näitä useita. Tulosten tallentaminen ei ole pakollista.
 
+
+Kuva kirjoita nimesi ja tallenna-nappi
+
 ## Pelitulosten tutkiminen
 
 Painamalla nappia "Katso pelituloksia" pääsee näkymään jossa voi painamalla nappia "Näytä kaikki tulokset" nähdä
 kaikki tallennetut tulokset, tai käyttämällä hakutoiminnallisuutta määritelläm minkä pelaajanimen tulokset haluaa
 nähdä. Tulosnäkymästä pääsee takaisin pelinäkymään painamalla nappia "Paina tästä palataksesi peliin".
+
+Kuva napista pelituloksiin
+
+## Uuden pelin aloittaminen
+
+Painamalla napista "Aloita uusi peli", saa aloitettua uuden pelin. Tämän jälkeen täytyy jälleen jakaa aloituskortit
+ja jatkaa jo tässä ohjeessa aiemmin kuvatulla tavalla pelaamista.
