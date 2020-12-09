@@ -27,10 +27,10 @@ Testikattavuutta voidaan tarkastella testikattavuusraportti komennolla mvn test 
 On huomioitava, että käyttöliittymä eli VenttiUi on jätetty raportista sivuun. Alla viimeisin tilanne
 testikattavuudesta:
 
-<img src="" width="">
+<img src="https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/testikattavuus.PNG" width="500">
 Kuva testikattavuudesta
 
-Raportista havaitaan, että rivikattavuus on xx% ja haaraumakattavuus yy%. Lukuja voidaan pitää tarpeeksi hyvinä...
+Raportista havaitaan, että rivikattavuus on 92% ja haaraumakattavuus 91%. Lukuja voidaan pitää tarpeeksi hyvinä tämän kaltaisen sovelluksen testaamiseen.
 
 ## Järjestelmätestaus
 
