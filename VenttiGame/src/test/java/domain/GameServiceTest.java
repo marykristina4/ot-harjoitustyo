@@ -1,10 +1,5 @@
 package domain;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -15,10 +10,9 @@ import venttigame.dao.GameResultDao;
 import venttigame.domain.GameResult;
 import venttigame.domain.GameService;
 import venttigame.domain.Hand;
-
 /**
+ * Luokka käytössä GameService-olioiden metodien testauksessa
  *
- * @author marye
  */
 public class GameServiceTest {
 
@@ -50,11 +44,6 @@ public class GameServiceTest {
     public void tearDown() {
     }
 
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
     @Test
     public void listSizeWorks() {
         assertEquals("2", Integer.toString(testService.getResults().size()));

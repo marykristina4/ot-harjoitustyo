@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ *
  */
 package domain;
 
@@ -12,11 +10,11 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import venttigame.domain.GameResult;
-
 /**
+ * Luokka käytössä GameResult-olioiden metodien testauksessa
  *
- * @author marye
  */
+
 public class GameResultTest {
     GameResult testResult;
     GameResult testNotResult;
@@ -41,11 +39,6 @@ public class GameResultTest {
     public void tearDown() {
     }
 
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
     @Test
     public void stringIsCorrect(){
         assertEquals("testplayer: testresult", testResult.tostring());

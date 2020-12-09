@@ -1,6 +1,5 @@
 package domain;
 
-
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -9,6 +8,10 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import venttigame.domain.Card;
 
+/**
+ * Luokka käytössä Card-olioiden metodien testauksessa
+ *
+ */
 
 public class CardTest {
 
@@ -48,12 +51,14 @@ public class CardTest {
         testCard.modifyValues();
         assertEquals("4", Integer.toString(smallTestCard.getNumber()));
     }
-     @Test
+
+    @Test
     public void cardDetailsCorrect() {
         testCard.modifyValues();
         assertEquals("Patakunkku", testCard.tostring());
     }
-     @Test
+
+    @Test
     public void cardDetailsCorrectSmallCard() {
         testCard.modifyValues();
         assertEquals("Herttanelonen", smallTestCard.tostring());
