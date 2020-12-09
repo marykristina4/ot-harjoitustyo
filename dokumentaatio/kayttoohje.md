@@ -26,9 +26,9 @@ tai ajamalla komentoriviltä kansiossa VenttiGame:
 ```
 ## Pelin käynnistäminen
 
-Kun peli käynnistetään, avautuu pelinäkymä
+Kun peli käynnistetään, avautuu pelinäkymä:
 
-<img src="https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/peli_kun_kaynnistetty.PNG" width="400">
+<img src="https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/peli_kun_kaynnistetty.PNG" width="500">
 
 Kuva pelinäkymästä
 
@@ -38,16 +38,20 @@ Kuva pelinäkymästä
 Jos peli ei ole ennaltaan tuttu, voi peliohjeet lukea näkymästä, joka aukeaa painamalla nappia "Paina tästä
 nähdäksesi ohjeet". Ohjenäkymästä pääsee takaisin peliin painamalla nappia "paina tästä päästäksesi peliin".
 
+<img src="https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/nappi_ohjeisiin.PNG" width="500">
 
 Kuva napista ohjeisiin
+
 
 ### Pelin aloitus
 
 Peli alkaa painamalla nappia "Jaa aloituskortit". Tällöin sekä pelaajalle että tietokoneelle/vastustajalle jaetaan
 kaksi korttia.
 
+<img src="https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/aloitus.PNG" width="500">
 
 Kuva pelin aloittamisesta
+
 
 ### Pelin edistyminen
 
@@ -65,8 +69,10 @@ tai tasapeliin.
 Pelaaja voi tallentaa pelin päätyttyä pelituloksensa kirjoittamalla tekstikenttään "Nimesi" haluamansa pelaajanimen.
 Samalla pelaajalla voi olla näitä useita. Tulosten tallentaminen ei ole pakollista.
 
+<img src="https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/tallenna_nimesi.PNG" width="500">
 
 Kuva kirjoita nimesi ja tallenna-nappi
+
 
 ## Pelitulosten tutkiminen
 
@@ -74,7 +80,10 @@ Painamalla nappia "Katso pelituloksia" pääsee näkymään jossa voi painamalla
 kaikki tallennetut tulokset, tai käyttämällä hakutoiminnallisuutta määritelläm minkä pelaajanimen tulokset haluaa
 nähdä. Tulosnäkymästä pääsee takaisin pelinäkymään painamalla nappia "Paina tästä palataksesi peliin".
 
+<img src="https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/pelitulokset.PNG" width="500">
+
 Kuva napista pelituloksiin
+
 
 ## Uuden pelin aloittaminen
 
