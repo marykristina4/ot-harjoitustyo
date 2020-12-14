@@ -16,8 +16,6 @@ Sovelluksen voi joko kloonata omalle koneelleen tai ladata jar-tiedoston. Luetha
 
 [Arkkitehtuurikuvaus](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
-[Sovelluksen toiminnallisuus](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/maarittely.md)
-
 [Testausdokumentti](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/testaus.md)
 
 [Tuntikirjanpito](https://github.com/marykristina4/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
