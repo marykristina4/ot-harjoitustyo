@@ -40,4 +40,6 @@
 |7.12|1|jar-paketin muodostus|
 |8.12|1|testaaminen koulun koneella|
 |9.12|2|dokumentaation päivitys|
-|summa|80h|9.12. mennessä|
+|9.12|1|testaus koulun koneella, jar|
+|14.12|2|loppupalautuksen vaateet|
+|summa|83h|14.12. mennessä|
